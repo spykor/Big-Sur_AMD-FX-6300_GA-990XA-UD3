@@ -1,0 +1,1 @@
+# Big-Sur_AMD-FX-6300_GA-990XA-UD3
