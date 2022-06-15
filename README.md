@@ -2,20 +2,20 @@
 
 **System Configuration**
 
-Gigabyte 990XA-UD3 motherboard
-
-FX-6300 CPU
-
-8GB RAM
-
-Gigabyte (Nvidia) GT730 Silent 2GB graphics card (metal compatible)
-
-Embedded Etron EJ168 USB contollers for USB 2.0 and USB 3.0 (**not compatible** with macOS)
-
-Discrete (VIA based) USB 3.0 controller compatible with macOS
-
-Various HDDs and SSDs with Windows 10, Linux and OS X / macOS systems (Sierra, Catalina)
-
+- Gigabyte 990XA-UD3 motherboard
+- 
+- FX-6300 CPU
+- 
+- 8GB RAM
+- 
+- Gigabyte (Nvidia) GT730 Silent 2GB graphics card (metal compatible)
+- 
+- Embedded Etron EJ168 USB contollers for USB 2.0 and USB 3.0 (**not compatible** with macOS)
+- 
+- Discrete (VIA based) USB 3.0 controller compatible with macOS
+- 
+- Various HDDs and SSDs with Windows 10, Linux and OS X / macOS systems (Sierra, Catalina)
+- 
 **Background**
 
 After succesfully installing and running Catalina on the above system, it was time to try and upgrade to Big Sur.
@@ -31,20 +31,20 @@ The **EFI** provided by the author of the post worked flawlessly with just a min
 
 **Prerequisites**
 
-USB stick 16 or 32 GB
-
-Spare SSD (or HDD) and maybe USB-to-SATA adapter for experimentation w/o case opening
-
-Prepare the disk by opening the Disk Utility and format the disk as APFS
-
-Apropriate SSDTs, kexts and patches for AMD FX CPU (SSDT-EC.aml, SSDT-USBX.aml, SSDT-XOSI.aml, Lilu.kext, VirttuslSMC.kext, etc.). Get info and necessary files from https://dortania.github.io/OpenCore-Install-Guide/AMD/fx.html#starting-point
-
-AMD Vanilla Kernel patches from https://github.com/AMD-OSX/AMD_Vanilla/tree/master
-
-Opencore package  https://mackie100projects.altervista.org/download-opencore-configurator/
-
-All necessary files are included in the EFI folder provided in the given post: https://forum.amd-osx.com/index.php?threads/success-asus-sabertooth-990fx-r2-0-fx-8350-nvidia-gtx-690-oc-0-7-6-big-sur-11-6-2-monterey-12-1.2400/
-
+- USB stick 16 or 32 GB
+- 
+- Spare SSD (or HDD) and maybe USB-to-SATA adapter for experimentation w/o case opening
+- 
+- Prepare the disk by opening the Disk Utility and format the disk as APFS
+- 
+- Apropriate SSDTs, kexts and patches for AMD FX CPU (SSDT-EC.aml, SSDT-USBX.aml, SSDT-XOSI.aml, Lilu.kext, VirttuslSMC.kext, etc.). Get info and necessary files from https://dortania.github.io/OpenCore-Install-Guide/AMD/fx.html#starting-point
+- 
+- AMD Vanilla Kernel patches from https://github.com/AMD-OSX/AMD_Vanilla/tree/master
+- 
+- Opencore package  https://mackie100projects.altervista.org/download-opencore-configurator/
+- 
+- All necessary files are included in the EFI folder provided in the given post: https://forum.amd-osx.com/index.php?threads/success-asus-sabertooth-990fx-r2-0-fx-8350-nvidia-gtx-690-oc-0-7-6-big-sur-11-6-2-monterey-12-1.2400/
+- 
 
 **Installing Big Sur for FX-6300 (GA-990XA-UD3)**
 
