@@ -37,11 +37,11 @@ Spare SSD (or HDD) and maybe USB-to-SATA adapter for experimentation w/o case op
 
 Prepare the disk by opening the Disk Utility and format the disk as APFS
 
-Apropriate SSDTs, kexts and patches for AMD FX CPU (SSDT-EC.aml, SSDT-USBX.aml, SSDT-XOSI.aml, Lilu.kext, VirttuslSMC.kext, etc.)
+Apropriate SSDTs, kexts and patches for AMD FX CPU (SSDT-EC.aml, SSDT-USBX.aml, SSDT-XOSI.aml, Lilu.kext, VirttuslSMC.kext, etc.). Get info and necessary files from https://dortania.github.io/OpenCore-Install-Guide/AMD/fx.html#starting-point
 
 AMD Vanilla Kernel patches from https://github.com/AMD-OSX/AMD_Vanilla/tree/master
 
-Opencore package
+Opencore package  https://mackie100projects.altervista.org/download-opencore-configurator/
 
 All necessary files are included in the EFI folder provided in the given post: https://forum.amd-osx.com/index.php?threads/success-asus-sabertooth-990fx-r2-0-fx-8350-nvidia-gtx-690-oc-0-7-6-big-sur-11-6-2-monterey-12-1.2400/
 
