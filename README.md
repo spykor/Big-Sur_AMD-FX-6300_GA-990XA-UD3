@@ -35,7 +35,9 @@ USB stick 16 or 32 GB
 
 Spare SSD (or HDD) and maybe USB-to-SATA adapter for experimentation w/o case opening
 
-Apropriate SSDTs, kexts and patches (SSDT-EC.aml, SSDT-USBX.aml, SSDT-XOSI.aml, Lilu.kext, VirttuslSMC.kext, etc.)
+Prepare the disk by opening the Disk Utility and format the disk as APFS
+
+Apropriate SSDTs, kexts and patches for AMD FX CPU (SSDT-EC.aml, SSDT-USBX.aml, SSDT-XOSI.aml, Lilu.kext, VirttuslSMC.kext, etc.)
 
 AMD Vanilla Kernel patches from https://github.com/AMD-OSX/AMD_Vanilla/tree/master
 
@@ -52,7 +54,7 @@ Install Big Suro installer on the USB stick by opening a Terminal and using the 
 
 **sudo /Applications/Install\ macOS\ Big\ Sur.app/Contents/Resources/createinstallmedia --volume /Volumes/USB /Applications/Install\ macOS\ Big\ Sur.app --nointeraction**
 
-Then, Open the above downloaded EFI folder and using the **ProperTree** editor make the appropriate adjustments in the **congi.plist** regarding the number of cores of the CPU (06 in this case) for the three "**algrey - Force cpuid_cores_per_package**" patches and alter the **Replace** value only.
+Then, Open the above downloaded EFI folder and using the **ProperTree** editor make the appropriate adjustments in the **config.plist** regarding the number of cores of the CPU (06 in this case) for the three "**algrey - Force cpuid_cores_per_package**" patches and alter the **Replace** value only.
 
 Changing B8000000 0000/BA000000 0000/BA000000 0090* to B8 <CoreCount> 0000 0000/BA <CoreCount> 0000 0000/BA <CoreCount> 0000 0090* substituting <CoreCount> with the hexadecimal value matching your physical core count.
 
@@ -66,7 +68,7 @@ After the system boots into the Opencore menu of the USB installer choose the ap
   
   Reboot into the new system disk (Big Sur)
   
-  Everything (but Sleep and proper Shutdown) should be working axcept Audio. For some reason Big Sur brakes VoodooHDA.kext injected through Opencore.
+  Everything (but Sleep and proper Shutdown) should be working except Audio. For some reason Big Sur brakes VoodooHDA.kext injected through Opencore.
   
  ** Fix Audio / VoodooHDA in Big Sur**
 
