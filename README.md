@@ -56,7 +56,7 @@ Install Big Suro installer on the USB stick by opening a Terminal and using the 
 
 Then, Open the above downloaded EFI folder and using the **ProperTree** editor make the appropriate adjustments in the **config.plist** regarding the number of cores of the CPU (06 in this case) for the three "**algrey - Force cpuid_cores_per_package**" patches and alter the **Replace** value only.
 
-Changing B8000000 0000/BA000000 0000/BA000000 0090* to B8 <CoreCount> 0000 0000/BA <CoreCount> 0000 0000/BA <CoreCount> 0000 0090* substituting <CoreCount> with the hexadecimal value matching your physical core count.
+Changing B8000000 0000/BA000000 0000/BA000000 0090* to B8 **CoreCount** 0000 0000/BA **CoreCount** 0000 0000/BA **CoreCount** 0000 0090* substituting **CoreCount** with the hexadecimal value matching your physical core count.
 
 Copy the EFI folder to the EFI partition of the USB installer stick and reboot
 
