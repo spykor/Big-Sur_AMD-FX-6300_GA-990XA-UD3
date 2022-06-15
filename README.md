@@ -41,5 +41,34 @@ AMD Vanilla Kernel patches from https://github.com/AMD-OSX/AMD_Vanilla/tree/mast
 
 Opencore package
 
+All necessary files are included in the EFI folder provided in the given post: https://forum.amd-osx.com/index.php?threads/success-asus-sabertooth-990fx-r2-0-fx-8350-nvidia-gtx-690-oc-0-7-6-big-sur-11-6-2-monterey-12-1.2400/
 
 
+**Installing Big Sur for FX-6300 (GA-990XA-UD3)**
+
+Download **Install macOS Big Sur** app (there are various ways to do that) and place it in the Applications folder
+
+Install Big Suro installer on the USB stick by opening a Terminal and using the command  
+
+**sudo /Applications/Install\ macOS\ Big\ Sur.app/Contents/Resources/createinstallmedia --volume /Volumes/USB /Applications/Install\ macOS\ Big\ Sur.app --nointeraction**
+
+Then, Open the above downloaded EFI folder and using the **ProperTree** editor make the appropriate adjustments in the **congi.plist** regarding the number of cores of the CPU (06 in this case) for the three "**algrey - Force cpuid_cores_per_package**" patches and alter the **Replace** value only.
+
+Changing B8000000 0000/BA000000 0000/BA000000 0090* to B8 <CoreCount> 0000 0000/BA <CoreCount> 0000 0000/BA <CoreCount> 0000 0090* substituting <CoreCount> with the hexadecimal value matching your physical core count.
+
+Copy the EFI folder to the EFI partition of the USB installer stick and reboot
+
+After the system boots into the Opencore menu of the USB installer choose the appropriate entry to start installing Big Sur onto the new disk.
+
+**Post Install**
+  
+  After Big Sur is installe on the new disk, copy the USB installer's EFI folder onto the new disk's EFI partition.
+  
+  Reboot into the new system disk (Big Sur)
+  
+  Everything (but Sleep and proper Shutdown) should be working axcept Audio. For some reason Big Sur brakes VoodooHDA.kext injected through Opencore.
+  
+ ** Fix Audio / VoodooHDA in Big Sur**
+
+  To fix audio in Big Sur (using VoodooHDA kext) follow the instructions from this post https://kaneis.wordpress.com/2022/06/13/how-to-fix-voodoohda-audio-for-amd-fx-cpus-ga-990xa-ud3-in-big-sur/
+  
