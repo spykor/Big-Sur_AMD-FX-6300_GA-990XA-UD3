@@ -18,7 +18,7 @@ Various HDDs and SSDs with Windows 10, Linux and OS X / macOS systems (Sierra, C
 
 **Background**
 
-After succesfully installing and running Catalina on the above system, it was time to try the upgrade of Big Sur.
+After succesfully installing and running Catalina on the above system, it was time to try and upgrade to Big Sur.
 Since it was not wise to upgrade the "production" system disk (Catalina), the decision was made to install Big Sur on a separate disk
 for safety reasons.
 
@@ -26,7 +26,7 @@ All the attempts following install instructions for AMD FX type systems failed, 
 
 Finally the solution came from a post on https://forum.amd-osx.com site.
 
-The **EFI** provided by the author of the post worked flawlessly with just a m inor adjustment for the number of CPUs in 3 Kernel patches as per instructions in https://github.com/AMD-OSX/AMD_Vanilla/tree/master
+The **EFI** provided by the author of the post worked flawlessly with just a minor adjustment for the number of CPUs in Kernel patches as per instructions in https://github.com/AMD-OSX/AMD_Vanilla/tree/master
 
 
 **Prerequisites**
