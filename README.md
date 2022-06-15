@@ -64,7 +64,7 @@ After the system boots into the Opencore menu of the USB installer choose the ap
 
 **Post Install**
   
-  After Big Sur is installe on the new disk, copy the USB installer's EFI folder onto the new disk's EFI partition.
+  After Big Sur is installed on the new disk, copy the USB installer's **EFI folder** onto the new disk's EFI partition.
   
   Reboot into the new system disk (Big Sur)
   
